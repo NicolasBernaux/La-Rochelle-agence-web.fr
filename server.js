@@ -5,11 +5,13 @@ const path = require('path');
 
 const router = express.Router();
 
-console.log(__dirname);
+const dist = path.join(__dirname, 'dist');
+
 router.get('/', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/index.html`));
+  res.sendFile(path.join(`${dist}/index.html`));
 });
 
+app.use(express.static('./public'));
 // add the router
 app.use('/', router);
 app.listen(process.env.port || 3000);
