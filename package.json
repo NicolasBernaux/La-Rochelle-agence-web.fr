@@ -14,8 +14,9 @@
   "license": "ISC",
   "author": "tr1s",
   "scripts": {
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "node server.js",
     "check": "npx npm-check-updates -u"
   },
   "dependencies": {
@@ -27,6 +28,7 @@
     "compression-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "cssnano": "^4.1.11",
+    "express": "^4.18.1",
     "favicons-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^4.5.2",
     "imagemin-mozjpeg": "^9.0.0",
