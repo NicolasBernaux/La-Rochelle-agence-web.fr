@@ -11,4 +11,7 @@ app.get('/', (req, res) => {
 
 app.use(express.static('dist'));
 // add the router
-app.listen(port);
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
