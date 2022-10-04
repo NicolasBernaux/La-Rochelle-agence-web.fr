@@ -1,16 +1,12 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
-// const path = require('path');
-
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-  res.sendFile('/dist/index.html');
+  res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
-
-app.use(express.static('dist'));
-// add the router
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
