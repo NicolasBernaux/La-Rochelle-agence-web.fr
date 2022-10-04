@@ -3,13 +3,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const router = express.Router();
+const port = process.env.port || 5000;
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.resolve('dist', 'index.html'));
 });
 
 app.use(express.static('dist'));
 // add the router
-app.use('/', router);
-app.listen(process.env.port || 5000);
+app.listen(port);
