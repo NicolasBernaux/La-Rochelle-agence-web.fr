@@ -5,10 +5,8 @@ const path = require('path');
 
 const router = express.Router();
 
-const dist = path.join(__dirname, 'dist');
-
 router.get('/', (req, res) => {
-  res.sendFile(path.join(`${dist}/index.html`));
+  res.sendFile(path.resolve('dist', 'index.html'));
 });
 
 app.use(express.static('./dist'));
