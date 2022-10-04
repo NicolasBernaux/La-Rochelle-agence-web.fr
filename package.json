@@ -18,7 +18,6 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "check": "npx npm-check-updates -u"
   },
-  "heroku-run-build-script": true,
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.8",
