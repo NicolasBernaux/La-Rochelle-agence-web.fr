@@ -77,16 +77,5 @@ module.exports = {
       scriptLoading: 'defer',
       templateParameters: content
     }),
-    new HtmlWebpackPlugin({
-      title: 'tris-404-page',
-      filename: '404.html',
-      template: './src/404.html',
-      inject: 'head'
-    })
   ],
-  externals: {
-    $: 'jquery',
-    jquery: 'jQuery',
-    'window.$': 'jquery'
-  }
 };
