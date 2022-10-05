@@ -10,14 +10,19 @@
     &__logo {
       width: 385px;
       height: auto;
+      max-width: 80vw;
     }
 
     &__subtitle {
       width: 100%;
       text-align: center;
-      font-size: rem(20px);
+      font-size: rem(18px);
       color: #CCCCCC;
       margin-bottom: 40px;
+      
+      @include s {
+        font-size: rem(20px);
+      }
 
       span {
         color: $yellow;
