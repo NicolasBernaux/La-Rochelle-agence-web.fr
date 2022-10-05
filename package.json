@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "start": "node server.js",
     "check": "npx npm-check-updates -u"
   },
   "dependencies": {
