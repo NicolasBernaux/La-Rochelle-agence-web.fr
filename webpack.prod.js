@@ -50,7 +50,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contentHash].css',
+      filename: 'style.[hash].css',
       chunkFilename: '[id].css'
     }),
     new CompressionPlugin({
@@ -59,7 +59,7 @@ module.exports = merge(common, {
     new OfflinePlugin()
   ],
   output: {
-    filename: '[name].[contentHash].js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   }
 });
