@@ -1,13 +1,14 @@
 module.exports = {
-  metaTitle: 'Agence web La Rochelle',
-  metaDescription: 'Agence web La Rochelle',
+  metaTitle: 'Agence web à La Rochelle - Agence Deux Rien',
+  metaDescription:
+    'Agence web spécialisée dans la création ou refonte de site web de A à Z : design personnalisé et développement sur-mesure pour un site performant et unique.',
   title: 'Agence web La Rochelle',
   keywords: 'Référencement,Google,SEO,SEA,Visibilité,Référencement',
   description:
-    'Nous développons et consolidons votre <b>visibilité</b> en appliquant les bonnes pratiques marketing si chères à <b>Google</b>. Nous étudions votre entreprise, vos projets, votre cible et votre zone de chalandise afin de mettre en avant votre site Internet en le plaçant sur les bons mots clés. Le référencement est un travail de fond et c’est parce qu’un référencement réussi est le fruit d’une préparation aboutie et réussie que nous sommes là.',
+    "L'agence Deux Rien s'occupe de la création et la refonte de <b>sites web</b> à La Rochelle et en Charente-Maritime. <b>Site vitrine</b> ou <b>e-commerce</b>, notre agence s'occupe de votre projet de A à Z : Design 100% personnalisé, développement sur-mesure <b>MobileFirst</b> et maintenance/infogérance de vos solutions. Deux Rien vous garantit un site performant, élégant et unique qui répond à vos besoin et à ceux de vos clients.",
   sites: {
-    'Agence digitale La Rochelle': 'https://agence-digitale-la-rochelle.fr',
-    'Agence seo La Rochelle': 'https://agence-seo-la-rochelle.fr',
-    'Agence commnunication La Rochelle': 'https://agence-communication-la-rochelle.fr'
+    'Agence Web La Rochelle': 'http://www.la-rochelle-agence-web.fr/',
+    'Agence SEO La Rochelle': 'https://agence-seo-la-rochelle.fr',
+    'Agence Communication La Rochelle': 'https://agence-communication-la-rochelle.fr/'
   }
 };
